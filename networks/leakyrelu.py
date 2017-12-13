@@ -52,6 +52,8 @@ def build_upsampler(input_size):
     model.add(LeakyReLU(alpha=0.2))
     model.add(MaxPooling2D(pool_size=(2, 2)))
     model.add(Flatten())
+    model.add(Dense(128))
+    model.add(LeakyReLU(alpha=0.2))
     unit_size = 128 * input_size[0] // 4 * input_size[1] // 4
     model.add(Dense(unit_size))
     model.add(BatchNormalization())
