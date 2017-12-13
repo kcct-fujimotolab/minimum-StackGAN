@@ -1,3 +1,14 @@
+# Datasets
+images/
+images_sample/
+
+# Snapshots
+*model.json
+*weights.hdf5
+
+# MacOS
+.DS_store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
