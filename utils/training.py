@@ -11,8 +11,8 @@ def display(step, steps, D_loss, GAN_loss):
         D_loss : Float, 損失値
         GAN_loss : Float, 損失値
     """
-    print('\rStep: '+str(step+1)+'/'+str(steps), end='')
-    print(' - D loss: '+str(D_loss)+' - GAN loss: '+str(GAN_loss), end='')
+    print('Step: '+str(step+1)+'/'+str(steps), end='')
+    print(' - D loss: '+str(D_loss)+' - GAN loss: '+str(GAN_loss), end='\r')
 
 
 def train(G, D, GAN, sets, batch):
