@@ -69,9 +69,9 @@ def main():
             # 一定間隔でスナップショットを撮る
             noise = np.random.uniform(0, 1, (batch, input_dim))
             results1 = generate(G1, source=noise)
-            save_images(results1, name=output_dirname+'S1'+str(epoch+1))
+            save_images(results1, name=output_dirname+'stage1/'+str(epoch+1))
             results2 = generate(G2, source=results1/255)
-            save_images(results2, name=output_dirname+'S2'+str(epoch+1))
+            save_images(results2, name=output_dirname+'stage2/'+str(epoch+1))
             G1.save_weights('G1_weights.hdf5')
             D1.save_weights('D1_weights.hdf5')
             G2.save_weights('G2_weights.hdf5')
