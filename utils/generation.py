@@ -11,6 +11,6 @@ def generate(G, source):
         images : Numpy array, 画像データ
     """
     input_dim = G.input_shape[1]
-    images = G.predict(noise)
+    images = G.predict(source)
     images = images * 255
     return images
