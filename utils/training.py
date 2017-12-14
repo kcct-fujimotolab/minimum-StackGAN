@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 
-def display(stage, step, steps, D_loss, GAN_loss):
+def display(step, steps, D_loss, GAN_loss):
     """
     学習の進行状況を表示する
     # 引数
