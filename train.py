@@ -60,10 +60,11 @@ def main():
     images2x = load_images(name=input_dirname, size=image_size2x)
     # 学習開始
     for epoch in range(epochs):
-        print('Epoch: '+str(epoch+1)+'/'+str(epochs))
         # Stage 1
+        print('Epoch: '+str(epoch+1)+'/'+str(epochs)+' - Stage: 1')
         train(G1, D1, GAN1, sets=images, batch=batch)
         # Stage 2
+        print('Epoch: '+str(epoch+1)+'/'+str(epochs)+' - Stage: 2')
         train_with_images(G1, G2, D2, GAN2, sets=images2x, batch=batch)
         if (epoch + 1) % save_freq == 0:
             # 一定間隔でスナップショットを撮る

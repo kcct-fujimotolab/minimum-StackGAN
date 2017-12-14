@@ -2,7 +2,7 @@ import math
 import numpy as np
 
 
-def display(step, steps, D_loss, GAN_loss):
+def display(stage, step, steps, D_loss, GAN_loss):
     """
     学習の進行状況を表示する
     # 引数
@@ -11,8 +11,8 @@ def display(step, steps, D_loss, GAN_loss):
         D_loss : Float, 損失値
         GAN_loss : Float, 損失値
     """
-    print('Step: '+str(step+1)+'/'+str(steps), end='')
-    print(' - D loss: '+str(D_loss)+' - GAN loss: '+str(GAN_loss), end='\r')
+    print('\rStep: '+str(step+1)+'/'+str(steps), end='')
+    print(' - D loss: '+str(D_loss)+' - GAN loss: '+str(GAN_loss), end='')
 
 
 def train(G, D, GAN, sets, batch):
