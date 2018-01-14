@@ -55,7 +55,19 @@ python train.py --input images/ --size 128 128 --epoch 5000
 
 ## Results
 
-Comming soon!
+We extracted 4096 images from the face data provided by [Labeled Faces in the Wild](http://vis-www.cs.umass.edu/lfw/), and trained with Keras model.
+
+### 1000 epochs
+![1000](https://i.imgur.com/LlPjdKG.jpg)
+
+### 2000 epochs
+![2000](https://i.imgur.com/bI7mQF2.jpg)
+
+### 4000 epochs
+![4000](https://i.imgur.com/MrqoC6a.jpg)
+
+### 6000 epochs
+![6000](https://i.imgur.com/R8XHxl5.jpg)
 
 ## Author
 
