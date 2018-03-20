@@ -20,7 +20,7 @@ Implementation of "なんちゃって" StackGAN model using Keras.
 1. Clone this repository:
 ```sh
 git clone https://github.com/kcct-fujimotolab/StackGAN.git
-cd DCGAN/
+cd StackGAN/
 ```
 
 2. Make a directory for data sets:
